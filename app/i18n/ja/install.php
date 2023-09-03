@@ -12,17 +12,17 @@
 
 return array(
 	'action' => array(
-		'finish' => 'インストール作業を終わりにする',
+		'finish' => 'インストール作業を完了する',
 		'fix_errors_before' => '次のステップへ移る前にエラーを修正してください。',
 		'keep_install' => '前の設定を保持する',
 		'next_step' => '次のステップへ進む',
 		'reinstall' => 'FreshRSSを再インストールする',
 	),
 	'auth' => array(
-		'form' => 'Webフォーム (Javascriptが必要です)',
+		'form' => 'Webフォーム (JavaScriptが必要です)',
 		'http' => 'HTTP (上級者向けのHTTPS)',
 		'none' => 'なし (危険)',
-		'password_form' => 'パスワード<br /><small>(fWeb-formログインメソッド)</small>',
+		'password_form' => 'パスワード<br /><small>(Web-formログインメソッド向け)</small>',
 		'password_format' => '最低限7文字必要です',
 		'type' => '認証メソッド',
 	),
@@ -41,7 +41,7 @@ return array(
 	),
 	'check' => array(
 		'_' => '環境確認',
-		'already_installed' => 'FreshRSS が、すでにインストールされています!',
+		'already_installed' => 'FreshRSS はすでにインストールされています！',
 		'cache' => array(
 			'nok' => ' <em>%1$s</em> ディレクトリ <em>%2$s</em> ユーザーのアクセス権限を確認してください。HTTPサーバーを書き込むには権限が必要です。',
 			'ok' => 'キャッシュディレクトリの権限は正しく設定されています。',
@@ -79,16 +79,16 @@ return array(
 			'ok' => 'mbstringライブラリはインストールされています。',
 		),
 		'pcre' => array(
-			'nok' => '正規表現ライブラリが見つかりませんでした。 (php-pcre).',
-			'ok' => '正規表現ライブラリはインストールされています。 (PCRE).',
+			'nok' => '正規表現ライブラリ (php-pcre) が見つかりませんでした。',
+			'ok' => '正規表現ライブラリ (PCRE) がインストールされています。',
 		),
 		'pdo' => array(
-			'nok' => 'PD0あるいはサポートされているドライバーが見つかりませんでした。 (pdo_mysql, pdo_sqlite, pdo_pgsql).',
-			'ok' => 'PD0とサポートされているドライバーはインストールされています。 (pdo_mysql, pdo_sqlite, pdo_pgsql).',
+			'nok' => 'PD0あるいはサポートされているドライバーが見つかりませんでした。(pdo_mysql, pdo_sqlite, pdo_pgsql).',
+			'ok' => 'PD0とサポートされているドライバーはインストールされています。(pdo_mysql, pdo_sqlite, pdo_pgsql).',
 		),
 		'php' => array(
 			'nok' => 'あなたのPHPのバージョンは %s ですが、FreshRSSが動作する最低限のバージョンは %s です。',
-			'ok' => 'あなたのPHPのバージョンは、 %s でFreshRSSと互換性があるバージョンです。',
+			'ok' => 'あなたのPHPのバージョンは %s で、FreshRSSと互換性があります。',
 		),
 		'reload' => '再度確かめる',
 		'tmp' => array(
@@ -109,15 +109,15 @@ return array(
 		'_' => '一般設定',
 		'ok' => '一般設定は保存されました。',
 	),
-	'congratulations' => 'おめでとうございます!',
+	'congratulations' => 'おめでとうございます！',
 	'default_user' => array(
 		'_' => 'デフォルトのユーザー名',
 		'max_char' => '最大16文字の英数字',
 	),
-	'fix_errors_before' => 'エラーを次のステップへ移る前に修正してください。',
-	'javascript_is_better' => 'FreshRSS はJavascriptが有効だとより快適にご利用いただけます。',
+	'fix_errors_before' => '次のステップへ進む前にエラーを修正してください。',
+	'javascript_is_better' => 'FreshRSSはJavascriptが有効だとより快適に利用できます。',
 	'js' => array(
-		'confirm_reinstall' => 'もし再インストールするとFreshRSSの設定は削除されます。それでも続けますか?',
+		'confirm_reinstall' => 'もし再インストールするとFreshRSSの設定は削除されます。それでも続けますか？',
 	),
 	'language' => array(
 		'_' => '言語',
@@ -127,7 +127,7 @@ return array(
 	'missing_applied_migrations' => '何かが誤っています; 空のファイルを手動で作ることができます <em>%s</em>',
 	'ok' => 'インストール作業は成功しました。',
 	'session' => array(
-		'nok' => 'webサーバーは、不正な設定がされておりPHPセッションが必要とされているクッキーの設定が誤っています!',
+		'nok' => 'ウェブサーバーのPHPセッションに必要なクッキーの設定が正しくないようです！',
 	),
 	'step' => 'ステップ %d',
 	'steps' => 'ステップ',

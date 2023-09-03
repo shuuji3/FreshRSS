@@ -20,7 +20,7 @@ return array(
 		'none' => 'なし (危険)',
 		'title' => '認証',
 		'token' => '認証トークン',
-		'token_help' => 'ユーザーが承認無しで、RSSを出力できるようにします。:',
+		'token_help' => 'デフォルトユーザーのRSS出力に、認証なしでアクセスできるようになります。',
 		'type' => '認証メソッド',
 		'unsafe_autologin' => '危険な自動ログインを有効にします',
 	),
@@ -136,18 +136,18 @@ return array(
 		'entry_count' => 'エントリの統計',
 		'entry_per_category' => 'カテゴリのエントリ',
 		'entry_per_day' => '日にちごとのエントリ (直近30日間)',
-		'entry_per_day_of_week' => '週あたり (平均: %.2f メッセージ)',
-		'entry_per_hour' => '時間当たり (平均: %.2f メッセージ)',
-		'entry_per_month' => '月あたり (平均: %.2f メッセージ)',
-		'entry_repartition' => 'エントリの仕切り',
+		'entry_per_day_of_week' => '1週間当たり (平均: %.2f メッセージ)',
+		'entry_per_hour' => '1時間当たり (平均: %.2f メッセージ)',
+		'entry_per_month' => '1ヶ月当たり (平均: %.2f メッセージ)',
+		'entry_repartition' => 'エントリの割り当て',
 		'feed' => 'フィード',
 		'feed_per_category' => 'カテゴリごとのフィード',
 		'idle' => '未使用のフィード',
 		'main' => '主な統計',
-		'main_stream' => '主なストリーム',
-		'no_idle' => '未使用のフィードはありません!',
+		'main_stream' => 'メインストリーム',
+		'no_idle' => '未使用のフィードはありません！',
 		'number_entries' => '%d 記事',
-		'percent_of_total' => '% 総計',
+		'percent_of_total' => '総計(%)',
 		'repartition' => '記事の仕切り',
 		'status_favorites' => 'お気に入り',
 		'status_read' => '既読',
@@ -163,7 +163,7 @@ return array(
 			'help' => '秒',
 			'number' => 'ログを残す間隔',
 		),
-		'force_email_validation' => 'Eメールアドレスの検証を強制します',
+		'force_email_validation' => 'メールアドレスの検証を強制します',
 		'instance-name' => 'インスタンス名',
 		'max-categories' => '1ユーザーごとのカテゴリの最大値',
 		'max-feeds' => '1ユーザーごとのフィードの最大値',
@@ -192,20 +192,20 @@ return array(
 	'update' => array(
 		'_' => 'システムアップデート',
 		'apply' => '適用',
-		'changelog' => 'Changelog',	// TODO
+		'changelog' => 'Changelog',	// IGNORE
 		'check' => 'アップデートを確認する',
-		'copiedFromURL' => 'update.php copied from %s to ./data',	// TODO
+		'copiedFromURL' => 'update.php が %s から ./data へコピーされました',
 		'current_version' => 'FreshRSS の現在のバージョンは %s です。',
 		'last' => '最近の検証: %s',
-		'loading' => 'Updating…',	// TODO
+		'loading' => '更新中…',
 		'none' => '更新を適用できません',
 		'releaseChannel' => array(
-			'_' => 'Release channel',	// TODO
+			'_' => 'リリースチャンネル',
 			'edge' => 'Rolling release (“edge”)',	// TODO
 			'latest' => 'Stable release (“latest”)',	// TODO
 		),
 		'title' => 'アップデートシステム',
-		'viaGit' => 'Update via git and Github.com started',	// TODO
+		'viaGit' => 'git と github.com 経由の更新が開始されました',
 	),
 	'user' => array(
 		'admin' => '管理者',
@@ -213,7 +213,7 @@ return array(
 		'back_to_manage' => '← ユーザーリストに戻る',
 		'create' => '新規ユーザーを作成',
 		'database_size' => 'データベースサイズ',
-		'email' => 'Eメールアドレス',
+		'email' => 'メールアドレス',
 		'enabled' => '有効',
 		'feed_count' => 'フィード',
 		'is_admin' => '管理者',

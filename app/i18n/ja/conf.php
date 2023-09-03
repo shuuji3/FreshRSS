@@ -17,7 +17,7 @@ return array(
 		'help' => '個々のフィード設定内で、より多くの設定をしていただけます。',
 		'keep_favourites' => 'お気に入りを消去しない',
 		'keep_labels' => 'ラベルを消去しない',
-		'keep_max' => '記事を保存する最大数',	// DIRTY
+		'keep_max' => 'フィードごとに保存する記事の最大数',
 		'keep_min_by_feed' => '記事をフィードに残す最小数',
 		'keep_period' => '記事を保存する最大時間',
 		'keep_unreads' => '未読の記事を消去しない',
@@ -33,9 +33,9 @@ return array(
 	'display' => array(
 		'_' => '表示',
 		'darkMode' => array(
-			'_' => 'Automatic dark mode (beta)',	// TODO
-			'auto' => 'Auto',	// TODO
-			'no' => 'No',	// TODO
+			'_' => '自動ダークモード (ベータ)',
+			'auto' => '自動',
+			'no' => 'いいえ',
 		),
 		'icon' => array(
 			'bottom_line' => '行の下部',
@@ -56,7 +56,7 @@ return array(
 		'theme' => array(
 			'_' => 'テーマ',
 			'deprecated' => array(
-				'_' => 'Deprecated',	// TODO
+				'_' => '廃止',
 				'description' => 'This theme is no longer supported and will be not available anymore in a <a href="https://freshrss.github.io/FreshRSS/en/users/05_Configuration.html#theme" target="_blank">future release of FreshRSS</a>',	// TODO
 			),
 		),
@@ -68,14 +68,14 @@ return array(
 			'portrait' => 'ポートレート',
 			'square' => '四角',
 		),
-		'timezone' => 'Time zone',	// TODO
+		'timezone' => 'タイムゾーン',
 		'title' => 'ディスプレイ',
 		'website' => array(
-			'full' => 'Icon and name',	// TODO
-			'icon' => 'Icon only',	// TODO
-			'label' => 'Website',	// TODO
-			'name' => 'Name only',	// TODO
-			'none' => 'None',	// TODO
+			'full' => 'アイコンと名前',
+			'icon' => 'アイコンのみ'
+			'label' => 'ウェブサイト',
+			'name' => '名前のみ',
+			'none' => 'なし',
 		),
 		'width' => array(
 			'content' => 'コンテンツ幅',
@@ -105,7 +105,7 @@ return array(
 			'_' => 'アカウント消去',
 			'warn' => 'あなたのアカウントとそれに関連したデータが消去されます。',
 		),
-		'email' => 'Eメールアドレス',
+		'email' => 'メールアドレス',
 		'password_api' => 'APIのパスワード<br /><small>(モバイルアプリなど)</small>',
 		'password_form' => 'パスワード<br /><small>(Web-formのログイン時に使われます)</small>',
 		'password_format' => '最低7文字必要です',
@@ -154,7 +154,7 @@ return array(
 	),
 	'reading' => array(
 		'_' => 'リーディング',
-		'after_onread' => 'あとで “すべてに既読を付ける”,',
+		'after_onread' => '「すべてを既読にする」の後、',
 		'always_show_favorites' => 'デフォルトですべてのお気に入りの記事を表示する',
 		'article' => array(
 			'authors_date' => array(
@@ -185,7 +185,7 @@ return array(
 		'articles_per_page' => '1ページ当たりの記事の数',
 		'auto_load_more' => 'ページの下にもっと記事を読み込む',
 		'auto_remove_article' => '記事を読んだら非表示にする',
-		'confirm_enabled' => '“すべてに既読を付ける” を押したとき確認ダイアログを表示する',
+		'confirm_enabled' => '「すべての既読にする」を押したとき、確認ダイアログを表示する',
 		'display_articles_unfolded' => 'デフォルトでフォルダーに入れてない記事を表示する',
 		'display_categories_unfolded' => '展開されていない記事',
 		'headline' => array(
@@ -196,11 +196,11 @@ return array(
 			'misc' => 'その他',
 			'view' => 'ビュー',
 		),
-		'hide_read_feeds' => 'カテゴリーを非表示 & 未読の記事がないフィード ("すべてに既読を付ける”では適用しません)',
-		'img_with_lazyload' => '<em>lazy load</em>を写真の読み込み時に使う',
+		'hide_read_feeds' => 'カテゴリーを非表示 & 未読の記事がないフィード (「すべての既読にする」では適用しません)',
+		'img_with_lazyload' => '写真の読み込み時に<em>遅延読み込み</em>を使う',
 		'jump_next' => '次の未読の姉妹記事へ移る (フィードあるいはカテゴリー)',
 		'mark_updated_article_unread' => '更新された記事を未読とする',
-		'number_divided_when_reader' => 'reading viewを二分割する',
+		'number_divided_when_reader' => 'リーディングビューを二分割する',
 		'read' => array(
 			'article_open_on_website' => '記事を元のwebサイトで開いたとき',
 			'article_viewed' => '記事を読んだとき',
@@ -217,7 +217,7 @@ return array(
 			'adaptive' => '表示を調整する',
 			'all_articles' => 'すべての記事を表示する',
 			'all_categories' => 'すべてのカテゴリ',
-			'no_category' => 'カテゴリがありません',
+			'no_category' => 'カテゴリなし',
 			'remember_categories' => '開いたカテゴリを保存する',
 			'unread' => '未読のみ表示する',
 		),
@@ -243,7 +243,7 @@ return array(
 		'blogotext' => 'Blogotext',	// IGNORE
 		'deprecated' => 'このサービスは非推奨でFreshRSSから削除される予定です<a href="https://freshrss.github.io/FreshRSS/en/users/08_sharing_services.html" title="Open documentation for more information" target="_blank">future release</a>.',
 		'diaspora' => 'Diaspora*',	// IGNORE
-		'email' => 'Eメール',
+		'email' => 'メール',
 		'facebook' => 'Facebook',	// IGNORE
 		'more_information' => 'もっと多くの情報',
 		'print' => '印刷',	// IGNORE
@@ -267,7 +267,7 @@ return array(
 		'focus_search' => '共有ボックスにアクセスする',
 		'global_view' => 'グローバルビューに変更する',
 		'help' => 'ドキュメントを表示する',
-		'javascript' => 'JavaScriptはショートカットを使うときに必要です',
+		'javascript' => 'ショートカットを使うためにはJavaScriptを有効にする必要があります',
 		'last_article' => '最近の記事を表示する',
 		'load_more' => 'もっと記事を読み込む',
 		'mark_favorite' => 'お気に入りを切り替える',
@@ -296,7 +296,7 @@ return array(
 	'user' => array(
 		'articles_and_size' => '%s 記事 (%s)',
 		'current' => '現在のユーザー',
-		'is_admin' => 'は管理者です',
+		'is_admin' => '管理者かどうか',
 		'users' => 'ユーザー',
 	),
 );

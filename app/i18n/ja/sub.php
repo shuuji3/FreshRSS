@@ -12,7 +12,7 @@
 
 return array(
 	'api' => array(
-		'documentation' => '外部ツール内で使うURLをコピーします。',
+		'documentation' => '外部ツール内で使うには、以下のURLをコピーしてください。',
 		'title' => 'API',	// IGNORE
 	),
 	'bookmarklet' => array(
@@ -26,9 +26,10 @@ return array(
 		'archiving' => 'アーカイブ',
 		'dynamic_opml' => array(
 			'_' => 'ダイナミックOPML',
-			'help' => '<a href="http://opml.org/" target="_blank">から提供されたOPMLファイル</a>をこのカテゴリに動的に追加します。',
+			'help' => 'Provide the URL to an <a href="http://opml.org/" target="_blank">OPML file</a> to dynamically populate this category with feeds',
+			'help' => 'このカテゴリに動的に追加するフィードを含む<a href="http://opml.org/" target="_blank">OPMLファイル</a>のURLを提供してください。',
 		),
-		'empty' => 'からのカテゴリ',
+		'empty' => '空のカテゴリ',
 		'information' => 'インフォメーション',
 		'opml_url' => 'OPMLのURL',
 		'position' => '表示位置',
@@ -57,18 +58,18 @@ return array(
 		),
 		'css_cookie' => '記事のコンテンツを読み出したとき、クッキーを使用する',
 		'css_cookie_help' => '例: <kbd>foo=bar; gdpr_consent=true; cookie=value</kbd>',
-		'css_help' => '失敗したRSSフィードを再取得します (ただし、多くの時間が必要になります!)',
+		'css_help' => '失敗したRSSフィードを再取得します (ただし、多くの時間が必要になります！)',
 		'css_path' => '元のwebサイトのCSS',
 		'css_path_filter' => array(
 			'_' => '削除される要素をCSSで選ぶ',
-			'help' => 'CSSセレクタは: <kbd> フッターやアサイド要素をリストにできます</kbd>',
+			'help' => 'CSSセレクタは: <kbd>フッターやアサイド要素をリストにできます</kbd>',
 		),
 		'description' => '説明',
 		'empty' => 'このフィードは空です。サイトが運営されているかどうかを確認してみてください。',
 		'error' => 'このフィードに問題が発生しました。ここでアクセスできるかどうかを確認して更新してみてください。',
 		'filteractions' => array(
 			'_' => 'フィルターアクション',
-			'help' => '1行に1つの検索フィルターを設定してください Operators <a href="https://freshrss.github.io/FreshRSS/en/users/10_filter.html#with-the-search-field" target="_blank">see documentation</a>.',	// DIRTY
+			'help' => '1行に1つの検索フィルターを書いてください。演算子については、<a href="https://freshrss.github.io/FreshRSS/en/users/10_filter.html#with-the-search-field" target="_blank">ドキュメントを読んでください</a>。',
 		),
 		'information' => 'インフォメーション',
 		'keep_min' => '最小数の記事は保持されます',
@@ -99,7 +100,7 @@ return array(
 					'help' => '例: <code>descendant::img/@src</code>',
 				),
 				'item_timeFormat' => array(
-					'_' => 'Custom date/time format',	// TODO
+					'_' => 'カスタムの date/time フォーマット',
 					'help' => 'Optional. A format supported by <a href="https://php.net/datetime.createfromformat" target="_blank"><code>DateTime::createFromFormat()</code></a> such as <code>d-m-Y H:i:s</code>',	// TODO
 				),
 				'item_timestamp' => array(
@@ -122,7 +123,7 @@ return array(
 				'xpath' => 'XPathは:',
 			),
 			'rss' => 'RSS / Atom (標準)',
-			'xml_xpath' => 'XML + XPath',	// TODO
+			'xml_xpath' => 'XML + XPath',	// IGNORE
 		),
 		'maintenance' => array(
 			'clear_cache' => 'キャッシュのクリア',
@@ -183,7 +184,7 @@ return array(
 		'title' => 'インポート / エクスポート',
 	),
 	'menu' => array(
-		'add' => 'フィード化カテゴリを追加します',
+		'add' => 'フィードまたはカテゴリを追加',
 		'import_export' => 'インポート / エクスポート',
 		'label_management' => 'ラベル管理',
 		'stats' => array(
@@ -191,7 +192,7 @@ return array(
 			'main' => '主な統計',
 			'repartition' => '記事の仕切り',
 		),
-		'subscription_management' => '購読されたものの管理',
+		'subscription_management' => '購読管理',
 		'subscription_tools' => '購読ツール',
 	),
 	'tag' => array(
